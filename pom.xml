@@ -1,10 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>es.egc</groupId>
-  <artifactId>ex3</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>15406153V</artifactId>
+  <version>6.0 release</version>
   <packaging>jar</packaging>
 
   <name>ex3</name>
@@ -22,5 +26,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+ <build>
+        <plugins>
+
+	    <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>2.19.1</version>
+               <configuration>
+		   <includes>
+ 			<include>/.java</include>
+		   </includes>
+               </configuration>
+            </plugin>	   
+
+        </plugins>
+</build>
 
 </project>
